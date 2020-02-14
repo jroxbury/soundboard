@@ -10,7 +10,7 @@ import {
   template: `
     <audio #audio src="./assets/{{source}}.m4a" type="audio/mp4"></audio>
     <div>
-      <button (click)="play()">{{btnText}}</button>
+      <button color="{{color}}" mat-raised-button (click)="play()">{{text}}</button>
     </div>
   `,
   styles: [],
@@ -18,7 +18,8 @@ import {
 })
 export class AudioButtonComponent {
   @Input() source: string;
-  @Input() btnText: string;
+  @Input() text: string;
+  @Input() color = 'primary';
 
   @ViewChild('audio') audioSource;
 

@@ -4,6 +4,9 @@ import {
 import {
   NgModule
 } from '@angular/core';
+import {
+  MatButtonModule
+} from '@angular/material/button';
 
 import {
   AppComponent
@@ -11,7 +14,9 @@ import {
 import {
   AudioButtonComponent
 } from './audio-button/audio-button.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  BrowserAnimationsModule
+} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

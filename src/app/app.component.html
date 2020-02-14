@@ -1,7 +1,14 @@
-<h1 style="text-align:center;">Ping Pong Soundboard</h1>
-<div style="display:flex;">
-  <ng-container *ngFor="let audioClip of audioClips">
-    <app-audio-button style="display:flex; margin:10px;" [btnText]="audioClip.btnText" [source]="audioClip.source">
-    </app-audio-button>
-  </ng-container>
+<div class="container">
+  <h1 class="title">Ping Pong Soundboard</h1>
+  <iframe src="https://giphy.com/embed/sxCKezAUq8yn6" width="480" height="351" frameBorder="0" class="giphy-embed"
+    allowFullScreen></iframe>
+  <p><a href="https://giphy.com/gifs/ping-pong-sxCKezAUq8yn6">via GIPHY</a></p>
+  <div class="button-container">
+    <ng-container *ngFor="let audioClip of audioClips">
+      <div style="display:flex; margin:10px;">
+        <app-audio-button [color]="audioClip.color" [text]="audioClip.text" [source]="audioClip.source">
+        </app-audio-button>
+      </div>
+    </ng-container>
+  </div>
 </div>

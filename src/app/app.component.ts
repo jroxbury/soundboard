@@ -9,10 +9,12 @@ import {
 })
 export class AppComponent {
   public audioClips = [{
-    btnText: 'Theme of the day!',
-    source: 'theme-of-the-day'
+    text: 'Theme of the day!',
+    source: 'theme-of-the-day',
+    color: 'primary'
   }, {
-    btnText: 'You never been clutch',
-    source: 'never-clutch'
+    text: 'You never been clutch',
+    source: 'never-clutch',
+    color: 'primary'
   }];
 }
