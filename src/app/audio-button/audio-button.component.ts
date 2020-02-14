@@ -20,13 +20,11 @@ export class AudioButtonComponent {
   @Input() source: string;
   @Input() btnText: string;
 
-  @ViewChild('audio', {
-    static: false
-  }) audioSource;
+  @ViewChild('audio') audioSource;
 
   public play(): void {
     this.audioSource.nativeElement.pause();
-    this.audioSource.nativeElement.currentTime = 0
+    this.audioSource.nativeElement.currentTime = 0;
     this.audioSource.nativeElement.play();
   }
 
